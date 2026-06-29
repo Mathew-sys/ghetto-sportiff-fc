@@ -1,62 +1,35 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0">
+<title>GHETTO SPORTIFF FC</title>
 
-<meta
-name="description"
-content="Official website of Ghetto Sportiff FC. Fixtures, news, players, gallery and club updates.">
-
-<title>
-Ghetto Sportiff FC | Official Football Club Website
-</title>
-
-<link
-rel="icon"
-href="images/sportiff.jpg">
-
-<link
-rel="stylesheet"
-href="style.css">
+<link rel="icon" href="images/sportiff.jpg">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
-
-
 <body>
-
-<div class="main">
-
-<!-- ================= HEADER ================= -->
 
 <header class="navbar">
 
 <div class="icon">
 
-<img
-src="images/sportiff.jpg"
-alt="Ghetto Sportiff FC Logo"
+<img src="images/sportiff.jpg"
 class="club-logo">
 
-<div class="club-details">
+<div>
 
 <h1 class="logo">
-
 GHETTO SPORTIFF FC
-
 </h1>
 
 <p class="club-tagline">
-
 TUJITEGEMEE • MUNGU MBELE SISI NYUMA
-
 </p>
 
 </div>
@@ -64,24 +37,23 @@ TUJITEGEMEE • MUNGU MBELE SISI NYUMA
 </div>
 
 
-
 <nav class="menu">
 
 <ul>
 
-<li><a href="#home">HOME</a></li>
+<li><a onclick="showPage('home')">HOME</a></li>
 
-<li><a href="#about">ABOUT</a></li>
+<li><a onclick="showPage('about')">ABOUT</a></li>
 
-<li><a href="#news">NEWS</a></li>
+<li><a onclick="showPage('news')">NEWS</a></li>
 
-<li><a href="#standings">SQUAD</a></li>
+<li><a onclick="showPage('team')">SQUAD</a></li>
 
-<li><a href="#fixtures">FIXTURES</a></li>
+<li><a onclick="showPage('fixtures')">FIXTURES</a></li>
 
-<li><a href="#media">MEDIA</a></li>
+<li><a onclick="showPage('media')">MEDIA</a></li>
 
-<li><a href="#contact">CONTACT</a></li>
+<li><a onclick="showPage('contact')">CONTACT</a></li>
 
 </ul>
 
@@ -91,271 +63,186 @@ TUJITEGEMEE • MUNGU MBELE SISI NYUMA
 
 
 
-<!-- ================= MAIN ================= -->
-
 <main>
 
+<section id="home" class="page active hero">
 
-
-<!-- HERO -->
-
-<section
-class="hero"
-id="home">
+<div class="hero-content">
 
 <h1>
-
-WELCOME TO THE OFFICIAL WEBSITE OF GHETTO SPORTIFF FC
-
+WELCOME TO GHETTO SPORTIFF FC
 </h1>
 
 <p>
-
 Building talent, unity and football excellence.
-
 </p>
 
-<a
-href="#fixtures"
-class="btn">
-
-View Fixtures
-
-</a>
+</div>
 
 </section>
-
 
 
 <!-- ABOUT -->
 
-<section
-class="about"
-id="about">
+<section id="about" class="page">
+
+<div class="container">
 
 <h2>
 
-About Us
+ABOUT GHETTO SPORTIFF FC
 
 </h2>
 
-<p>
-
-Ghetto Sportiff FC develops football talent,
-builds teamwork and creates opportunities
-through sport.
-
-</p>
-
-</section>
+<div class="section-line"></div>
 
 
+<!-- INTRO -->
 
-<!-- NEWS -->
-
-<section
-class="news-section"
-id="news">
-
-<h2>
-
-Latest News
-
-</h2>
-
-<div class="news-card">
+<div class="about-card">
 
 <h3>
 
-Match Day Announcement
+INTRODUCTION
 
 </h3>
 
 <p>
 
-Stay updated with club fixtures,
-results and activities.
+Ghetto Sportiff FC was established with the vision of identifying, developing and nurturing football talent while empowering young people through sport.
+
+The club was formed to create opportunities for talented players and provide a positive environment where discipline, teamwork and leadership are developed.
+
+What began as a local football initiative has continued to grow into a competitive club driven by passion, commitment and community support.
+
+Ghetto Sportiff FC believes football is more than a game — it is a platform for transformation, opportunity and building future generations of leaders.
+
+Through continuous growth, proper management and dedication, the club seeks to become a respected football institution that inspires both players and supporters.
 
 </p>
 
 </div>
 
+
+
+<!-- VISION -->
+
+<div class="vision-grid">
+
+<div class="vision-box">
+
+<h3>
+
+VISION
+
+</h3>
+
+<p>
+
+To become one of the most respected, competitive and professionally managed football clubs in Kenya, East Africa and beyond through excellence both on and off the pitch.
+
+</p>
+
+</div>
+
+
+
+<!-- MISSION -->
+
+<div class="vision-box">
+
+<h3>
+
+OUR MISSION
+
+</h3>
+
+<p>
+
+To manage football professionally, identify and nurture talent, promote discipline and teamwork, and consistently achieve outstanding performance.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- MOTTO -->
+
+<div class="about-card">
+
+<h3>
+
+TEAM MOTTO
+
+</h3>
+
+<div class="motto">
+
+TUJITEGEMEE
+
+<br>
+
+MUNGU MBELE SISI NYUMA
+
+</div>
+
+</div>
+
+
+
+<!-- VALUES -->
+
+<div class="about-card">
+
+<h3>
+
+CORE VALUES
+
+</h3>
+
+<div class="values">
+
+<span>Faith in God</span>
+
+<span>Diligence</span>
+
+<span>Commitment</span>
+
+<span>Excellence</span>
+
+<span>Professionalism</span>
+
+<span>Team Work</span>
+
+<span>Honesty</span>
+
+<span>Sacrifice</span>
+
+<span>Discipline</span>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
+<section id="news" class="page">
 
-<!-- TEAM -->
-
-<section
-class="team"
-id="standings">
-
-<h2>
-
-Our Squad
-
-</h2>
-
-<div class="players">
-
-<div class="player">
-
-<h3>Goalkeeper</h3>
-
-</div>
-
-<div class="player">
-
-<h3>Midfielder</h3>
-
-</div>
-
-<div class="player">
-
-<h3>Striker</h3>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- FEATURED PLAYERS -->
-
-<section
-class="player-section">
-
-<h2>
-
-Featured Players
-
-</h2>
-
-<div class="player-cards">
+<h2>LATEST NEWS</h2>
 
 <div class="card">
 
-<img
-src="images/player1.jpg"
-alt="Featured Forward">
-
-<h3>
-
-John Doe
-
-</h3>
+<h3>MATCH DAY ANNOUNCEMENT</h3>
 
 <p>
 
-Forward
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<img
-src="images/player2.jpg"
-alt="Featured Midfielder">
-
-<h3>
-
-James Kariuki
-
-</h3>
-
-<p>
-
-Midfielder
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<img
-src="images/player3.jpg"
-alt="Featured Goalkeeper">
-
-<h3>
-
-David Kimani
-
-</h3>
-
-<p>
-
-Goalkeeper
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- CLUB STATS -->
-
-<section class="stats">
-
-<div class="stat-box">
-
-<h2>
-
-50+
-
-</h2>
-
-<p>
-
-Matches Played
-
-</p>
-
-</div>
-
-
-
-<div class="stat-box">
-
-<h2>
-
-18
-
-</h2>
-
-<p>
-
-Players
-
-</p>
-
-</div>
-
-
-
-<div class="stat-box">
-
-<h2>
-
-10
-
-</h2>
-
-<p>
-
-Trophies
+Stay updated with fixtures and club news.
 
 </p>
 
@@ -365,19 +252,29 @@ Trophies
 
 
 
-<!-- FIXTURES -->
+<section id="team" class="page">
 
-<section
-class="fixtures"
-id="fixtures">
+<h2>OUR SQUAD</h2>
 
-<h2>
+<div class="grid">
 
-Upcoming Fixture
+<div class="card">Goalkeeper</div>
 
-</h2>
+<div class="card">Midfielder</div>
 
-<div class="fixture-card">
+<div class="card">Striker</div>
+
+</div>
+
+</section>
+
+
+
+<section id="fixtures" class="page">
+
+<h2>UPCOMING FIXTURE</h2>
+
+<div class="card">
 
 <h3>
 
@@ -391,13 +288,7 @@ OPPONENT FC
 
 <p>
 
-Saturday | 3:00 PM
-
-</p>
-
-<p>
-
-Home Ground
+Saturday • 3 PM
 
 </p>
 
@@ -407,43 +298,17 @@ Home Ground
 
 
 
-<!-- GALLERY -->
+<section id="media" class="page">
 
-<section
-class="gallery"
-id="media">
+<h2>CLUB GALLERY</h2>
 
-<h2>
+<div class="gallery">
 
-Club Gallery
+<img src="images/jako.jpg">
 
-</h2>
+<img src="images/player.jpg">
 
-<div class="gallery-images">
-
-<img
-src="images/jako.jpg"
-alt="Ghetto Sportiff FC Match">
-
-<img
-src="images/player.jpg"
-alt="Club Player">
-
-<img
-src="images/team.jpg"
-alt="Team Photo">
-
-<img
-src="images/gallery4.jpg"
-alt="Training Session">
-
-<img
-src="images/gallery5.jpg"
-alt="Supporters">
-
-<img
-src="images/gallery6.jpg"
-alt="Celebration">
+<img src="images/team.jpg">
 
 </div>
 
@@ -451,98 +316,185 @@ alt="Celebration">
 
 
 
-<!-- SPONSORS -->
+<section id="contact" class="page">
 
-<section class="sponsors">
+<h2>CONTACT US</h2>
 
-<h2>
+<div class="card">
 
-Our Sponsors
+<input placeholder="Your Name">
 
-</h2>
+<input placeholder="Your Email">
 
-<div class="sponsor-list">
-
-<div>
-
-Sponsor One
-
-</div>
-
-<div>
-
-Sponsor Two
-
-</div>
-
-<div>
-
-Sponsor Three
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section
-class="contact"
-id="contact">
-
-<h2>
-
-Contact Us
-
-</h2>
-
-<form>
-
-<input
-type="text"
-placeholder="Your Name">
-
-<input
-type="email"
-placeholder="Your Email">
-
-<textarea
-placeholder="Your Message"></textarea>
+<textarea placeholder="Message"></textarea>
 
 <button>
 
-Send Message
+SEND MESSAGE
 
 </button>
 
-</form>
+</div>
 
 </section>
-
-
 
 </main>
 
 
 
-<!-- FOOTER -->
-
 <footer>
 
-<p>
+<!-- SOCIAL -->
 
-© GHETTO SPORTIFF FC | All Rights Reserved
+<div class="social-grid">
 
-</p>
+<a
+href="https://www.facebook.com/groups/666466108992527/"
+target="_blank">
+
+Facebook
+
+</a>
+
+
+<a
+href="https://www.instagram.com/ghetto_sportiff.fs/"
+target="_blank">
+
+Instagram
+
+</a>
+
+
+<a
+href="https://www.tiktok.com/@ghettosportiff"
+target="_blank">
+
+TikTok
+
+</a>
+
+
+<a
+href="https://www.youtube.com/@GhettoSportifffc"
+target="_blank">
+
+YouTube
+
+</a>
+
+
+<a
+href="#">
+
+WhatsApp
+
+</a>
+
+
+<a
+href="#">
+
+Telegram
+
+</a>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="footer-grid">
+
+<div>
+
+<img
+src="images/sportiff.jpg"
+class="club-logo">
+
+</div>
+
+
+<div>
+
+<h3>TEAM</h3>
+
+<p>Senior Team</p>
+
+<p>Youth Team</p>
+
+<p>Players</p>
+
+</div>
+
+
+<div>
+
+<h3>HISTORY</h3>
+
+<p>Club Journey</p>
+
+<p>Community Impact</p>
+
+<p>Club Achievements</p>
+
+</div>
+
+
+<div>
+
+<h3>CONTACT US</h3>
+
+<p>info@ghettosportiff.com</p>
+
+<p>+254 XXX XXX XXX</p>
+
+<p>Nairobi, Kenya</p>
+
+</div>
+
+</div>
+
+
+
+<div class="copyright">
+
+© 2026 GHETTO SPORTIFF FC
+
+</div>
 
 </footer>
 
+<script>
 
+function showPage(id){
 
-</div>
+const pages =
+document.querySelectorAll(".page");
+
+pages.forEach(page=>{
+
+page.style.display="none";
+
+});
+
+document.getElementById(id)
+.style.display="block";
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+window.onload=function(){
+
+showPage("home");
+
+};
+
+</script>
 
 </body>
 
